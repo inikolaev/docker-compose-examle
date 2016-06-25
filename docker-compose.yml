@@ -7,7 +7,7 @@ services:
     depends_on:
       - mysql
   nginx:
-    image: inikolaev/alpine-nginx
+    build: ./nginx/.
     ports:
       - 80:80
     links:
